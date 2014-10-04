@@ -1,0 +1,11 @@
+{
+  "name": "finance-explorer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Robin Thrift <thrift.d.robin@googlemail.com>",
+  "license": "MIT"
+}
