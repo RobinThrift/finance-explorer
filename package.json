@@ -13,5 +13,11 @@
     "gulp-jshint": "^1.8.5",
     "gulp-traceur": "^0.13.0",
     "jshint-stylish": "^1.0.0"
+  },
+  "dependencies": {
+    "blessed": "0.0.37",
+    "require-dir": "^0.1.0",
+    "sequelize": "^2.0.0-rc1",
+    "sqlite3": "^3.0.2"
   }
 }
