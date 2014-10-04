@@ -22,3 +22,12 @@ gulp.task('scripts', ['lint'], function() {
         .pipe(traceur())
         .pipe(gulp.dest(config.dest));
 });
+
+
+
+gulp.task('default', ['scripts']);
+
+
+gulp.task('watch', ['default'], function() {
+    gulp.watch(config.paths.scripts, ['scripts']);
+});
