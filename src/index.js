@@ -9,6 +9,7 @@ function main() {
         program = blessed.program(),
         modules = {
             App: require('./modules/app'),
+            DB: require('./modules/db')
         },
         app     = new modules.App({
             cwd: process.cwd(),
@@ -18,6 +19,7 @@ function main() {
             modules: modules
         });
 
+    app.registerModule(modules.DB);
 
     app.start();
 
