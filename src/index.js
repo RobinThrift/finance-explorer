@@ -6,12 +6,18 @@ function main() {
 
     var blessed = require('blessed'),
         screen  = blessed.screen(),
-        reqDir  = require('require-dir'),
-        modules = reqDir('./modules'),
-        app     = new modules.app({
+        program = blessed.program(),
+        modules = {
+            App: require('./modules/app'),
+        },
+        app     = new modules.App({
+            cwd: process.cwd(),
             screen: screen,
+            blessed: blessed,
+            program: program,
             modules: modules
         });
+
 
     app.start();
 }
